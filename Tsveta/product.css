@@ -1,0 +1,24 @@
+
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    max-width: 800px;
+    background-color: pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+
+}
+.product-name{
+    font-family: ssans-serif;
+    display: inline;
+}
+
+.description-text{
+    display: inline;
+}
