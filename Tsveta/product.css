@@ -1,9 +1,15 @@
+p, em {
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: ivory;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: rgb(126, 156, 141);: ;
 }
 
 .container{
@@ -15,19 +21,19 @@ body{
     align-items: center;
     align-content: center;
     width: 95%;
-    background-color: pink;
+    background-color: rgb(126, 156, 141);
     padding: 1rem;
 }
 
 .product-image{
-    margin-left: 5rem;
+    margin-left: 1rem;
     margin-top: 18.5rem;
 }
 
 .product-info{
     flex-direction: column;
     margin-right: 15rem;
-    margin-top: 11rem;
+    margin-top: 15rem;
 }
 .text{
     display: inline;
@@ -36,7 +42,13 @@ body{
 
 .taste{
     display: inline;
-    font-size: 2rem;
+    font-size: 1.7rem;
+}
+
+.price{
+    font-size: 1.5rem;
+    margin-top:2rem;
+    margin-bottom: 4rem;
 }
 
 .description{
@@ -49,6 +61,28 @@ body{
     font-size: 1.5rem;
 }
 
+.quantity-box{
+    margin-top: 4rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    width: 50;
+}
+
 .add{
     margin-top: 10rem;
+    cursor: pointer;
+    background-color: rgba(98, 61, 61, 0.64);
+    color: aliceblue;
+    border-radius: 5rem;
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border: none;
+    margin-left: 6rem;
+}
+
+.add:hover{
+    background-color: rgba(115, 81, 81, 0.64);;
 }
