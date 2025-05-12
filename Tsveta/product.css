@@ -26,14 +26,15 @@ body{
 }
 
 .product-image{
-    margin-left: 1rem;
-    margin-top: 18.5rem;
+    margin-left: 7rem;
+    margin-top: 18rem;
+    box-shadow: 0 0 15px 10px rgba(104, 97, 97, 0.5);
 }
 
 .product-info{
     flex-direction: column;
-    margin-right: 15rem;
-    margin-top: 15rem;
+    margin-right: 10rem;
+    margin-top: 17rem;
 }
 .text{
     display: inline;
@@ -66,6 +67,8 @@ body{
     cursor: pointer;
     border-radius: 0.2rem;
     width: 50;
+    font-size: 1.5rem;
+    padding: 0.5rem;
 }
 
 .add{
