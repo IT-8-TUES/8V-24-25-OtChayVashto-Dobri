@@ -38,17 +38,19 @@
     align-items: center;
     color: black;
 }
-#products {
+.products, .products-2 {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+}
+.products-2 {
+    margin-top: 2em;
 }
 .product:nth-child(1) {
-    margin-left: 3em;
+    margin-left: em;
     
 }
 .product:nth-child(4) {
-    margin-right: 3em;
+    margin-right: em;
 }
 .name, .price {
     font-size: 1.5em;
@@ -77,4 +79,3 @@
     font-size: 2em;
     margin-bottom: 0.6em;
 }
-
