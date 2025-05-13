@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+ .header {
+    border-bottom: solid;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.5em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+}
+.left-section {
+    display: inline;
+}
+.right-section {
+    display: flex;
+    gap: 1.5em;
+
+}
+.element {
+    color: black;
+    text-decoration: none; 
+}
+.element:hover {
+    color: gray;
+}
+#cart {
+    height: 1em;
+    margin-top: 0.1em;
+}
+        </style>
+    </head>
+    <body>
+        <div class="header">
+           <div class="left-section">
+            <a class="element" href="../Yana/homepage.html" target="_blank">Name</a>
+           </div>
+           <div class="right-section">
+            <a href="shop.html" target="_blank" class="element">Shop</a>
+            <a href="about-us.html" target="_blank" class="element">About us</a>
+            <a href="Tsveta/cart.html" target="_blank"><img src="cart.png" id="cart"></a>
+           </div>     
+        </div>
+    </body>
+</html>

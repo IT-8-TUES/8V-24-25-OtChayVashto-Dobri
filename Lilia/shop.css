@@ -7,6 +7,11 @@
     padding-left: 1em;
     padding-right: 1em;
     font-size: 1.5em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
 }
 .left-section {
     display: inline;
@@ -14,7 +19,7 @@
 .right-section {
     display: flex;
     gap: 1.5em;
-    
+
 }
 .element {
     color: black;
@@ -38,11 +43,11 @@
     align-items: center;
     color: black;
 }
-.products, .products-2 {
+.products, .products-2, .products-3  {
     display: flex;
     justify-content: space-around;
 }
-.products-2 {
+.products-2, .products-3 {
     margin-top: 2em;
 }
 .product:nth-child(1) {
@@ -78,4 +83,5 @@
     justify-content: center;
     font-size: 2em;
     margin-bottom: 0.6em;
+    padding-top: 2em;
 }
