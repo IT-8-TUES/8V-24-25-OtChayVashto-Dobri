@@ -14,7 +14,11 @@
     background-color: white;
 }
 .left-section {
-    display: inline;
+    display: inline-flex;
+}
+#logo {
+    height: 1.3em;
+    margin-right: 0.5em;
 }
 .right-section {
     display: flex;

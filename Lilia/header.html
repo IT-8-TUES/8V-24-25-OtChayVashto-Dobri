@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Header</title>
         <style>
  .header {
     border-bottom: solid;
@@ -18,7 +19,7 @@
     background-color: white;
 }
 .left-section {
-    display: inline;
+    display: inline-flex;
 }
 .right-section {
     display: flex;
@@ -36,12 +37,17 @@
     height: 1em;
     margin-top: 0.1em;
 }
+#logo {
+    height: 1.3em;
+    margin-right: 0.5em;
+}
         </style>
     </head>
     <body>
         <div class="header">
            <div class="left-section">
-            <a class="element" href="../Yana/homepage.html" target="_blank">Name</a>
+            <a href="../Yana/homepage.html" target="_blank"><img src="../images/logotea.png" id="logo"></a>
+            <a class="element" href="../Yana/homepage.html" target="_blank">Leaf & Bloom</a>
            </div>
            <div class="right-section">
             <a href="shop.html" target="_blank" class="element">Shop</a>
