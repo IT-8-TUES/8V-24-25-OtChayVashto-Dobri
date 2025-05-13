@@ -1,0 +1,96 @@
+.add:hover{
+    background-color:rgb(88, 67, 67);
+
+}
+
+.footer-container{
+    background-color: rgba(133, 101, 101, 0.64);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 101%;
+    padding-top: 2rem;
+}
+
+.information{
+    display: flex;
+    justify-self:center;
+    align-items: baseline;
+    flex-direction: row;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+}
+
+.follow{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align:center:
+}
+
+.put-email{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.email{
+    cursor: pointer;
+    border-radius: 2rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+}
+
+.spam{
+    margin-left: 1rem;
+    border-radius: 4rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border: none;
+    background-color: rgb(75, 54, 54);
+    color: white;
+}
+
+.spam:hover{
+    background-color: rgb(88, 67, 67);
+}
+
+.copyright{
+    background-color: rgba(133, 101, 101, 0.64);
+    width: 101%;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    
+}
