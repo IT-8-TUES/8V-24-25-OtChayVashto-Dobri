@@ -65,7 +65,8 @@ body{
     margin-left: 4rem;
     margin-top: 2rem;
     box-shadow: 0 0 15px 10px rgba(104, 97, 97, 0.5);
-    max-width: 400px;
+    max-width: 90%;
+
 }
 
 .product-info{
@@ -73,7 +74,7 @@ body{
     flex-direction: column;
     margin-right: 4rem;
     margin-top: 2rem;
-    max-width:500px;
+    max-width:100%
 }
 .text{
     display: inline;
