@@ -48,34 +48,56 @@ p,h1,em{
     margin-right: 0.5em;
 }/*lily's header*/
 
-.who-are-we{
+
+.container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left:2rem;
-    width: 47%;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .title{
     margin-top: 7rem;
-    margin-left: 2rem;
+    display: flex;
     margin-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem;
 }
 
-.video1{
-    margin-bottom: 3rem;
+.left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 47%;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 .text1{
     font-size: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.video2{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .text2{
     font-size: 1.5rem;
 }
+
+.right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:47%;
+    
+}
+
+.video1{
+    margin-top: 1.5rem;
+    order:2;
+}
+
+.photo{
+    margin-bottom: 2rem;
+}
+
