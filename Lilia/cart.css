@@ -1,0 +1,40 @@
+.header {
+    border-bottom: solid;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(133, 101, 101, 0.64);
+}
+.left-section {
+    display: inline-flex;
+}
+#logo {
+    height: 1.3em;
+    margin-right: 0.5rem;
+}
+.right-section {
+    display: flex;
+    gap: 2.3rem;
+}
+.element {
+    color: black;
+    text-decoration: none; 
+}
+.element:hover {
+    color: gray;
+}
+#cart {
+    height: 1em;
+    margin-top: 0.1rem;
+}
+.heading {
+    margin-top: 7rem;
+}
