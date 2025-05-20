@@ -4,12 +4,14 @@ p,h1,em{
 }
 
 html,body{ 
-    background-color: white;
+    background-color: rgb(235, 213, 213);
     padding: 0;
     margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*lily's header*/ .header {
+    z-index: 1;
     border-bottom: solid;
     height: 3em;
     display: flex;
@@ -22,7 +24,7 @@ html,body{
     top: 0;
     right: 0;
     left: 0;
-    background-color: rgba(133, 101, 101, 0.64);
+    background-color: rgb(156, 131, 131);
 }
 .left-section {
     display: inline-flex;
@@ -71,7 +73,7 @@ html,body{
     top: 0;
     background-color: rgb(0, 0, 0, 0.5);
     font-size: 5rem;
-    color: white;
+    color: rgb(235, 213, 213);
 }
 
 .main{
@@ -82,9 +84,9 @@ html,body{
 }
 
 .text1{
-    margin-left: 2rem;
+    text-align: justify;
     font-size: 1.7rem;
-    width: 97%;
+    width: 85%;
     margin-top: 3rem;
 }
 
@@ -97,9 +99,10 @@ html,body{
 }
 
 .text2{
+    text-align: justify;
     font-size: 1.7rem;
     margin-top: 3rem;
-    width: 95%;
+    width: 85%;
 }
 
 .audios{
@@ -107,7 +110,7 @@ html,body{
     justify-content: start;
     flex-direction: column;
     margin-top: 3rem;
-    margin-right: 55rem;
+    margin-right: 45rem;
 }
 
 .text-sound{
@@ -133,7 +136,7 @@ html,body{
 }
 
 .footer-container{
-    background-color: rgba(133, 101, 101, 0.64);
+    background-color:  rgb(156, 131, 131);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,6 +145,8 @@ html,body{
     right: 0;
     bottom: 0;
     padding-top: 2rem;
+    border-top:  solid;
+    border-color: rgb(88, 67, 67);
 }
 
 .information{
@@ -218,7 +223,7 @@ html,body{
 }
 
 .copyright{
-    background-color: rgba(133, 101, 101, 0.64);
+    background-color:  rgb(156, 131, 131);
     left:0;
     right: 0;
     bottom: 0;
