@@ -4,12 +4,13 @@ p, em {
 }
 
 body{ 
-    background-color: white ;
+    background-color: rgb(235, 213, 213);
     margin: 0;
     padding: 0;
 }
 
  /*lily's header*/ .header {
+
     border-bottom: solid;
     height: 3em;
     display: flex;
@@ -22,7 +23,7 @@ body{
     top: 0;
     right: 0;
     left: 0;
-    background-color: rgba(133, 101, 101, 0.64);
+    background-color: rgb(156, 131, 131);
     border-color: rgb(88, 67, 67);
 }
 .left-section {
@@ -56,7 +57,6 @@ body{
     justify-content: center;
     align-items: stretch;
     width: 100%;
-    background-color: white;
     margin-bottom: 5rem;
 }
 
@@ -81,6 +81,7 @@ body{
 }
 
 .text{
+    text-align: justify;
     display: inline;
     font-size: 3rem;
 }
@@ -136,7 +137,7 @@ body{
 }
 
 .footer-container{
-    background-color: rgba(133, 101, 101, 0.64);
+    background-color: rgb(156, 131, 131);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,6 +146,8 @@ body{
     right: 0;
     bottom: 0;
     padding-top: 2rem;
+    border-top: solid;
+    border-color: rgb(75, 54, 54);
 }
 
 .information{
@@ -218,7 +221,7 @@ body{
 }
 
 .copyright{
-    background-color: rgba(133, 101, 101, 0.64);
+    background-color: rgb(156, 131, 131);
     left: 0;
     right: 0;
     bottom: 0;
