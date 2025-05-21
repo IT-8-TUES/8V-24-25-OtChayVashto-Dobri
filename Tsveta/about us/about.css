@@ -4,7 +4,7 @@ p,h1,em{
 }
 
 html,body{ 
-    background-color: rgb(235, 213, 213);
+    background-color: rgb(255, 233, 233);
     padding: 0;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -25,6 +25,8 @@ html,body{
     right: 0;
     left: 0;
     background-color: rgb(156, 131, 131);
+    border-width: 2px;
+
 }
 .left-section {
     display: inline-flex;
@@ -136,7 +138,7 @@ html,body{
 }
 
 .footer-container{
-    background-color:  rgb(156, 131, 131);
+    background-color:  rgb(164, 137, 137);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,8 +147,6 @@ html,body{
     right: 0;
     bottom: 0;
     padding-top: 2rem;
-    border-top:  solid;
-    border-color: rgb(88, 67, 67);
 }
 
 .information{
@@ -223,7 +223,7 @@ html,body{
 }
 
 .copyright{
-    background-color:  rgb(156, 131, 131);
+    background-color:  rgb(164, 137, 137);
     left:0;
     right: 0;
     bottom: 0;
