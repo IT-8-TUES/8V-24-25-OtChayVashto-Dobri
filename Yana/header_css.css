@@ -1,0 +1,41 @@
+/* Lily's header css */
+.header {
+    /* border-bottom: solid; */
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.5em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    /* yana ->*/ z-index: 10;
+    box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.3); /* <- yana */
+}
+.left-section {
+    display: inline-flex;
+}
+.right-section {
+     display: flex;
+     gap: 1.5em;
+}
+.element {
+    color: black;
+    text-decoration: none; 
+}
+.element:hover {
+    color: gray;
+}
+#cart {
+    height: 1em;
+    margin-top: 0.1em;
+}
+#logo {
+    height: 1.3em;
+    margin-right: 0.5em;
+}
+/* end of Lily's header css */
