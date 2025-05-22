@@ -1,11 +1,14 @@
+p {
+   margin: 0;
+}
 body {
     margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;
-
+    background-color: white;
 }
 .header {
-    border-bottom: solid;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     height: 3em;
     display: flex;
     justify-content: space-between;
@@ -17,8 +20,8 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    background-color: rgba(133, 101, 101, 0.64);
-    z-index: 1;
+    background-color: rgb(198, 169, 163);
+    z-index: 3;
 }
 .left-section {
     display: inline-flex;
@@ -50,26 +53,48 @@ body {
     font-size: 3rem;
     margin-bottom: 0;
 }
+#flavorFilter {
+    width: 8rem;
+    height: 2rem;
+    margin-left: 4rem;
+}
+
+
+  .hidden {
+    display: none !important; 
+}
+  .sort {
+    margin-left: 4rem;
+}
 .product {
-    display: inline-flex;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    height: 23em;
-    width: 15em;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 12.5em;
+    background-color: rgb(237, 222, 222);
+    padding: 1rem;
+    padding-top: 1.5rem;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s;
+    text-decoration: none;
     color: black;
 }
-.products, .products-2, .products-3  {
-    display: flex;
-    justify-content: space-around;
+.product-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
 }
-.products-2, .products-3 {
-    margin-top: 3rem;
-}
-.products-3 {
-    margin-bottom: 3rem;
+ .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-items: center;
+  row-gap: 3rem;
 }
 .name, .price {
     font-size: 1.5em;
@@ -81,21 +106,22 @@ body {
     margin-bottom: 0;
 }
 .tea-image {
-    height: 14em;
-    width: 11em;
-    margin-top: 1.5em;
-    border-radius: 15px;
-    transition: 0.5s;
+  height: 14em;
+  width: 11em;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  object-fit: cover;
 }
+
 .tea-image:hover {
-    height: 14.5em;
-    width: 11.5em;
-    cursor: pointer;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 /*Tsveti's footer*/
 .footer-container{
-    background-color: rgba(133, 101, 101, 0.64);
+    background-color: rgb(198, 169, 163);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,6 +129,8 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
+    padding-top: 2rem;
+     margin: 0;
 }
 
 .information{
@@ -175,59 +203,15 @@ body {
 }
 
 .copyright{
-    background-color: rgba(133, 101, 101, 0.64);
+    background-color: rgb(198, 169, 163);
     right: 0;
     left: 0;
     bottom: 0;
     display: flex;
     flex-direction: column;
     align-items:end;
-    
 }
-
 /*Tsveti's footer*/
-.menu-container {
-  margin-top: 5rem;
-  margin-left: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin-left: 3rem;
-  margin-bottom: 2rem;
-}
-
-.dropbtn {
-  background-color: #ddd;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f2f2f2;
-  min-width: 160px;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  padding: 10px 16px;
-  display: block;
-  text-decoration: none;
-  color: black;
-}
-
-.dropdown-content a:hover {
-  background-color: #e0e0e0;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+  
+ 

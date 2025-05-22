@@ -3,7 +3,6 @@
     <head>
         <link href="shop.css" rel="stylesheet">
         <title>Shop</title>
-    
     </head>
     <body>
         <div class="header">
@@ -17,95 +16,127 @@
             <a href="cart.html"><img src="cart.png" id="cart"></a>
            </div>     
         </div>
-                 <h1 id="heading">All Products</h1>
-            <div class="dropdown">
-                <p class="dropbtn">Sort by Taste &#8681;</p>
-                <div class="dropdown-content">
-                <a href="#">Shop all</a>
-                <a href="tea-sorting/herbal.html">Herbal</a>
-                <a href="tea-sorting/fruity.html">Fruity</a>
-                <a href="tea-sorting/flower.html">Flower</a>
-                <a href="#">Other</a>
-                </div>
-            </div>
-            
-        <div class="products">
-           <a href="../Tsveta/products/product.html"><div class="product">
-           <img src="../images/daisyTea.png" class="tea-image">
+                 <h1 id="heading">Products</h1>
+
+           <p class="sort">Sort by flavor:</p>
+            <select id="flavorFilter" onchange="filterTeas()">
+                <option value="all">All</option>
+                <option value="herbal">Herbal</option>
+                <option value="fruity">Fruity</option>
+                <option value="flower">Flower</option>
+            </select> 
+
+        <div class="products-grid">
+
+           <a href="../Tsveta/products/product.html" class="product" data-flavor="flower">
+           <img src="../images/daisyTea.png" class="tea-image">   
+           <div class="product-description">
            <p class="name">Daisy Bloom</p>
            <p class="horizontal-line">&#9473;</p>
            <p class="price">8.99 BGN</p>
-           </div></a>
-           <a href="../Tsveta/products/rose.html"><div class="product">
+           </div>
+           </a>
+            
+           <a href="../Tsveta/products/rose.html" class="product" data-flavor="flower">
            <img src="../images/kissOfRose.png" class="tea-image">
+           <div class="product-description">
            <p class="name">Rose Kiss</p>
            <p class="horizontal-line">&#9473;</p>
            <p class="price">8.99 BGN</p>
-           </div></a>
-           <a href="../Tsveta/products/lavender.html"><div class="product">
+           </div>
+           </a>
+
+           <a href="../Tsveta/products/lavender.html" class="product" data-flavor="flower">
            <img src="../images/lavenderVeil.png" class="tea-image">
+           <div class="product-description">
            <p class="name">Lavender Veil</p>
            <p class="horizontal-line">&#9473;</p>
            <p class="price">8.99 BGN</p>
-           </div></a>
-           <a href="../Tsveta/products/lemon.html"><div class="product">
+           </div>
+           </a>
+
+           <a href="../Tsveta/products/lemon.html" class="product" data-flavor="fruity">
            <img src="../images/lushLemon.png" class="tea-image">
+           <div class="product-description">
            <p class="name">Lush Lemon</p>
            <p class="horizontal-line">&#9473;</p>
            <p class="price">8.99 BGN</p>
-           </div></a>
-        </div>
-        <div class="products-2">
-           <a href="../Tsveta/products/balkan.html"><div class="product">
+           </div>
+           </a>
+
+        
+           <a href="../Tsveta/products/balkan.html" class="product" data-flavor="herbal"> 
            <img src="../images/balkanBrew.png" class="tea-image">
+           <div class="product-description">
            <p class="name">Balkan Brew</p>
            <p class="horizontal-line">&#9473;</p>
            <p class="price">8.99 BGN</p>
-           </div></a>
-           <a href="../Tsveta/products/mountain.html"><div class="product">
+           </div>
+           </a>
+
+           <a href="../Tsveta/products/mountain.html" class="product" data-flavor="herbal">
            <img src="../images/mountainMist.png" class="tea-image">
+           <div class="product-description">
            <p class="name">Mountain Mist</p>
            <p class="horizontal-line">&#9473;</p>
            <p class="price">8.99 BGN</p>
-           </div></a>
-           <a href="../Tsveta/products/apple.html"><div class="product">
+           </div>
+           </a>
+
+           <a href="../Tsveta/products/apple.html" class="product" data-flavor="fruity">
            <img src="../images/appleOrchard.png" class="tea-image">
+           <div class="product-description">
            <p class="name">Apple Orchard</p>
            <p class="horizontal-line">&#9473;</p> 
            <p class="price">8.99 BGN</p>
-           </div></a>
-           <a href="../Tsveta/products/leafy.html"><div class="product">
+           </div>
+           </a>
+
+           <a href="../Tsveta/products/leafy.html" class="product" data-flavor="herbal">
            <img src="../images/Leafy.png" class="tea-image">
+           <div class="product-description">
            <p class="name">Leafy</p>
            <p class="horizontal-line">&#9473;</p>
            <p class="price">8.99 BGN</p>
-           </div></a>
-        </div>
-        <div class="products-3">
-           <a href="../Tsveta/products/dark.html"><div class="product">
+           </div>
+           </a>
+
+           <a href="../Tsveta/products/dark.html" class="product" data-flavor="herbal">
            <img src="../images/darkAndSteep.png" class="tea-image">
+           <div class="product-description">
            <p class="name">Dark&Steep</p>
            <p class="horizontal-line">&#9473;</p>
            <p class="price">8.99 BGN</p>
-           </div></a>
-           <a href="../Tsveta/products/berry.html"><div class="product">
+           </div>
+           </a>
+
+           <a href="../Tsveta/products/berry.html" class="product" data-flavor="fruity">
            <img src="../images/innerBerry.png" class="tea-image">
+           <div class="product-description">
            <p class="name">Inner Berry</p>
            <p class="horizontal-line">&#9473;</p>
            <p class="price">8.99 BGN</p>
-           </div></a>
-           <a href="../Tsveta/products/thyme.html"><div class="product">
+           </div>
+           </a>
+
+           <a href="../Tsveta/products/thyme.html" class="product" data-flavor="flower">
            <img src="../images/pureThyme.png" class="tea-image">
+           <div class="product-description">
            <p class="name">Pure Thyme</p>
            <p class="horizontal-line">&#9473;</p>
            <p class="price">8.99 BGN</p>
-           </div></a>
-           <a href="../Tsveta/products/vibe.html"><div class="product">
+           </div>
+           </a>
+
+           <a href="../Tsveta/products/vibe.html" class="product" data-flavor="herbal">
            <img src="../images/teaVibe.png" class="tea-image">
+           <div class="product-description">
            <p class="name">Tea Vibe</p>
            <p class="horizontal-line">&#9473;</p>
            <p class="price">8.99 BGN</p>
-           </div></a>
+           </div>
+           </a>
+        
         </div>
         <!--code for footer from Tsveti's folder-->
         <div class="footer-container">
@@ -129,6 +160,28 @@
             </div>
        </div>
        <div class="copyright"><p>©2025 LeafAndBloom.All rights reserved.</p></div>
+
+       <script>
+  function filterTeas() {
+    const filter = document.getElementById("flavorFilter").value;
+    const teas = document.getElementsByClassName("product");
+
+    for (let i = 0; i < teas.length; i++) {
+      const flavor = teas[i].getAttribute("data-flavor");
+      if (filter === "all" || flavor === filter) {
+        teas[i].classList.remove("hidden");
+      } else {
+        teas[i].classList.add("hidden");
+      }
+    }
+  }
+
+  window.onload = filterTeas;
+</script>
+
+  // Show all by default
+  window.onload = filterTeas;
+</script>
     </body>
 </html>
 
