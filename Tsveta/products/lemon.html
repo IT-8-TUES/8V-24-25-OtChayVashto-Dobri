@@ -28,7 +28,7 @@
                 <img src="/images/lushLemon.png" class="product-image"> 
              <div class="product-info">
                 <div class="text">
-                    <p><b>Lush Lemon</b></p>
+                    <p class="product-name"><b>Lush Lemon</b></p>
                 </div>
 
                 <div class="taste">
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="price">
-                    <p><b>8.99 BGN</b></p>
+                    <p class="product-price"><b>8.99 BGN</b></p>
                 </div>
 
                 <div class="description">
@@ -45,12 +45,12 @@
 
                 <div>
                     <p class="quantity-text">Quantity:
-                <input type="number" class="quantity-box">
+                <input type="number" class="quantity-box" min="1" max="15">
                 </p>
                 </div>
 
                 <div> 
-                    <button class="add">Add to cart</button>
+                    <button class="add" onclick="addToCart()">Add to cart</button>
                 </div>
              </div>  
        </div>
@@ -76,5 +76,6 @@
             </div>
        </div>
        <div class="copyright"><p>©2025 LeafAndBloom.All rights reserved.</p></div>
+       <script src="../../cart.js"></script>
     </body>
 </html>

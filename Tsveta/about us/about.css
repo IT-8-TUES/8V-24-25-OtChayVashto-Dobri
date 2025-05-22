@@ -24,8 +24,9 @@ html,body{
     top: 0;
     right: 0;
     left: 0;
-    background-color: rgb(156, 131, 131);
+    background-color: white;
     border-width: 2px;
+    box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.3);
 
 }
 .left-section {
