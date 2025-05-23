@@ -4,7 +4,7 @@ p,h1,em{
 }
 
 html,body{ 
-    background-color: rgb(255, 233, 233);
+    background-color: rgb(255, 244, 244);
     padding: 0;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -12,7 +12,6 @@ html,body{
 
 /*lily's header*/ .header {
     z-index: 1;
-    border-bottom: solid;
     height: 3em;
     display: flex;
     justify-content: space-between;
@@ -24,8 +23,7 @@ html,body{
     top: 0;
     right: 0;
     left: 0;
-    background-color: white;
-    border-width: 2px;
+    background-color: rgb(198, 180, 176);
     box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.3);
 
 }
@@ -139,7 +137,7 @@ html,body{
 }
 
 .footer-container{
-    background-color:  rgb(164, 137, 137);
+    background-color:  rgb(160, 138, 133);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -189,7 +187,6 @@ html,body{
     align-items: center;
     flex-direction: column;
     font-size: 1.5rem;
-    align:center:
 }
 
 .put-email{
@@ -224,7 +221,7 @@ html,body{
 }
 
 .copyright{
-    background-color:  rgb(164, 137, 137);
+    background-color: rgb(160, 138, 133);
     left:0;
     right: 0;
     bottom: 0;

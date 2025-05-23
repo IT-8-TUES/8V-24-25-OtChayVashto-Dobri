@@ -3,14 +3,8 @@ p, em {
     padding: 0;
 }
 
-body{ 
-    background-color: rgb(255, 244, 244);
-    margin: 0;
-    padding: 0;
-}
-
 .footer-container{
-    background-color: rgb(195, 168, 168);
+    background-color: rgb(160, 138, 133);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,7 +86,7 @@ body{
 }
 
 .copyright{
-    background-color: rgb(195, 168, 168);
+    background-color: rgb(160, 138, 133);
     left: 0;
     right: 0;
     bottom: 0;
