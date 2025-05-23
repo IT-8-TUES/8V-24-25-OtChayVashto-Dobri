@@ -12,8 +12,8 @@
            </div>
            <div class="right-section">
             <a href="shop.html" class="element">Shop</a>
-            <a href="about-us.html" class="element">About us</a>
-            <a href="../Lilia/header.html"><img src="cart.png" id="cart">
+            <a href="../Tsveta/about us/about.html" class="element">About us</a>
+            <a href="cart.html"><img src="cart.png" id="cart">
             <span id="cart-count">0</span>
             </a>
            </div>     
@@ -260,22 +260,23 @@
   }
   
   function calculateTotal() {
-  const prices = document.querySelectorAll('.total-price');
+  const productElements = document.querySelectorAll('.added-product');
   const quantities = document.querySelectorAll('.quantity');
   let total = 0;
 
-  for (let i = 0; i < prices.length; i++) {
-    const price = parseFloat(prices[i].innerText);
-    const quantity = parseInt(quantities[i].innerText);
+  productElements.forEach(product => {
+    const priceText = product.querySelector('.price').innerText;
+    const price = parseFloat(priceText.replace('BGN', '').trim());
+    const quantity = parseInt(product.querySelector('.quantity').innerText);
     total += price * quantity;
-  }
+  });
 
   document.querySelector('.total-price').innerText = 'Total: BGN ' + total.toFixed(2);
 }
-window.onload = calculateTotal;
+calculateTotal();
 
 
-  src="../cart.js"
+ src="../cart.js" 
        </script>
     </body>
 </html>
