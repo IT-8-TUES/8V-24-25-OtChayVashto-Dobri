@@ -1,8 +1,11 @@
-p, body {
+p, body  {
     margin: 0;
 }
+body {
+    background-color: #fef9f6;    
+}
 .header {
-    border-bottom: solid;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     height: 3em;
     display: flex;
     justify-content: space-between;
@@ -14,7 +17,7 @@ p, body {
     top: 0;
     right: 0;
     left: 0;
-    background-color: rgba(133, 101, 101, 0.64);
+    background-color: rgb(190, 167, 161);
 }
 .left-section {
     display: inline-flex;
@@ -40,18 +43,39 @@ p, body {
 }
 .heading {
     margin-top: 7rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
 }
 .added-product {
-    background-color: rgb(237, 222, 222);
     height: 12rem;
     margin-bottom: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: rgb(216, 207, 207);
+    padding-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 }
 .product-left-section {
     display: flex;
     flex-direction: row;
+}
+.product-description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.price {
+    font-size: 1rem;
+}
+.quantity-control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
 }
 .image {
     height: 10rem;
@@ -59,8 +83,9 @@ p, body {
     margin-left: 1.5rem;
     margin-right: 3rem;
 }
-.reset-button {
-    margin-bottom: 20rem;
+#reset-button {
+    margin-left: 71rem;
+    margin-top: 2rem;
 }
 .product-name {
     padding-top: 1rem;
@@ -73,9 +98,13 @@ p, body {
     border: none;
     height: 3rem;
 }
+.total-price {
+    font-size: 1.3rem;
+    padding-left: 68rem;
+}
 /*Tsveti's footer*/
 .footer-container{
-    background-color: rgb(198, 169, 163);
+    background-color: rgb(160, 138, 133);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +113,7 @@ p, body {
     left: 0;
     bottom: 0;
     padding-top: 2rem;
-     margin: 0;
+    margin-top: 10rem;
 }
 
 .information{
@@ -157,7 +186,7 @@ p, body {
 }
 
 .copyright{
-    background-color: rgb(198, 169, 163);
+    background-color: rgb(160, 138, 133);
     right: 0;
     left: 0;
     bottom: 0;
