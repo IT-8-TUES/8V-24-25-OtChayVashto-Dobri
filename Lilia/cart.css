@@ -1,3 +1,6 @@
+p {
+    margin: 0;
+}
 .header {
     border-bottom: solid;
     height: 3em;
@@ -38,3 +41,119 @@
 .heading {
     margin-top: 7rem;
 }
+.added-product {
+    background-color: rgb(237, 222, 222);
+    height: 12rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+.image {
+    height: 10rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 3rem;
+}
+.reset-button {
+    margin-bottom: 20rem;
+}
+.product-name {
+    padding-top: 2rem;
+}
+.remove-button {
+    margin-left: 60rem;
+    height: 3rem;
+}
+/*Tsveti's footer*/
+.footer-container{
+    background-color: rgb(198, 169, 163);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 2rem;
+     margin: 0;
+}
+
+.information{
+    display: flex;
+    justify-self:center;
+    align-items: baseline;
+    flex-direction: row;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+}
+
+.follow{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.put-email{
+    display: flex;
+    align-items: center;
+}
+.email{
+    cursor: pointer;
+    border-radius: 2rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+}
+
+.spam{
+    margin-left: 1rem;
+    border-radius: 4rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border: none;
+    background-color: rgb(75, 54, 54);
+    color: white;
+}
+
+.spam:hover{
+    background-color: rgb(88, 67, 67);
+}
+
+.copyright{
+    background-color: rgb(198, 169, 163);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+}
+/*Tsveti's footer*/
