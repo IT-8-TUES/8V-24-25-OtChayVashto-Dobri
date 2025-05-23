@@ -136,6 +136,12 @@ html,body{
 
 }
 
+.party{
+    display: flex;
+    margin-bottom: 3rem;
+    margin-left: 8rem;
+}
+
 .footer-container{
     background-color:  rgb(160, 138, 133);
     display: flex;
