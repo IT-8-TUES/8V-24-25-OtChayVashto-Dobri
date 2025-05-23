@@ -41,7 +41,7 @@ p, body {
 .heading {
     margin-top: 7rem;
 }
-.added-product {
+#cart-container {
     background-color: rgb(237, 222, 222);
     height: 12rem;
     margin-bottom: 3rem;
