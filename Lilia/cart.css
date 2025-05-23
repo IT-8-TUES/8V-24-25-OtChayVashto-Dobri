@@ -84,8 +84,19 @@ body {
     margin-right: 3rem;
 }
 #reset-button {
-    margin-left: 71rem;
+    margin-left: 70rem;
     margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+}
+#reset-button:hover {
+    background-color: rgb(222, 220, 220);
+    cursor: pointer;
+}
+#reset-button:active {
+    background-color: white;
 }
 .product-name {
     padding-top: 1rem;
@@ -96,7 +107,15 @@ body {
 .remove-button {
     background: none;
     border: none;
-    height: 3rem;
+    border-radius: 20px;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.remove-button:hover {
+    background-color: #dbd4d0;
+}
+.remove-button:active {
+    background-color: white;
 }
 .total-price {
     font-size: 1.3rem;
@@ -113,7 +132,7 @@ body {
     left: 0;
     bottom: 0;
     padding-top: 2rem;
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .information{
