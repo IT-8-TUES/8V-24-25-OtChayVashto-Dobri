@@ -12,8 +12,8 @@
     top: 0;
     right: 0;
     left: 0;
-    background-color: white;
-    /* yana ->*/ z-index: 10;
+    background-color: rgb(190, 167, 161);
+    /* yana ->*/ z-index: 1;
     box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.3); /* <- yana */
 }
 .left-section {

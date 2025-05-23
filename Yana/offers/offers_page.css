@@ -1,0 +1,94 @@
+p, h1, em{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    background-color: rgb(255, 244, 244);
+}
+
+
+.section-title{
+    margin-top: 5vh;
+   
+    font-size: 4rem;
+    font-weight: 500;
+    color: black;
+}
+
+.offers-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border-bottom: 1px solid black; 
+    height: 32vh;
+    width: 90%;
+    margin: 10vh 5% 0 5%;
+}
+
+
+
+.all-offers-base{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    margin-bottom: 7vh;
+
+
+}
+
+.offer-base{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 76%;
+    padding: 8vh 0 7vh 5vw;
+    margin: 0 12%;
+
+    border-top: 1px solid black;
+}
+
+.offer-image{
+
+    height: 62vh;
+    width: 52vh;
+    object-fit: cover;
+    box-shadow: 0 0 15px 10px rgba(104, 97, 97, 0.5);
+}
+
+.offer-title{
+    text-align: justify;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 3vh;
+}
+
+.offer-desc{
+    display: flex;
+    flex-direction: column;
+
+    height: 55vh;
+    width: 38vw;
+    /* min-width: 55vh; */
+    margin-left: 7vw;
+
+    /* border: 1px solid black; */
+}
+
+.text{
+    font-size: 1.5rem;
+    text-indent: 1em;
+
+}
+
+li{
+    text-indent: 0;
+}
