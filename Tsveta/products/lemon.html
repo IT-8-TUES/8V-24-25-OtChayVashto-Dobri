@@ -20,7 +20,9 @@
            <div class="right-section">
             <a href="../../Lilia/shop.html"  class="element">Shop</a>
             <a href="../about us/about.html" class="element">About us</a>
-            <a href="../../Lilia/cart.html"><img src="../../Lilia/cart.png" id="cart"></a>
+            <a href="../../Lilia/cart.html"><img src="../../Lilia/cart.png" id="cart">
+            <span id="cart-count">0</span><!--for the cartQuant function-->
+        </a>
            </div>     
         </div> <!--lily's header-->
 
@@ -40,7 +42,7 @@
                 </div>
 
                 <div class="description">
-                    <p>A bright,zesty infusion bursting with citrusy <br>freshness.Refreshing and invigorating, it's <br> sunshine sip in every cup.</p>
+                    <p>A bright infusion bursting with citrusy <br>freshness.Refreshing and invigorating, it's <br> sunshine sip in every cup.</p>
                 </div>
 
                 <div>
@@ -50,7 +52,7 @@
                 </div>
 
                 <div> 
-                    <button class="add" onclick="addToCart()">Add to cart</button>
+                    <button class="add" onclick="addToCart(this)">Add to cart</button>
                 </div>
              </div>  
        </div>
