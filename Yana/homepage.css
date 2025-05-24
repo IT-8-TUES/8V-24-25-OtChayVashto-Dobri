@@ -245,7 +245,7 @@ body{
     transition: all 0.2s;
 }
 .q-button:active{
-    background-color: rgb(75, 54, 54);
+    background-color: rgb(238, 0, 0);
     transition: all 0.2s;
 }
 

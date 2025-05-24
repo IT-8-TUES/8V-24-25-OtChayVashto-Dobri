@@ -181,13 +181,13 @@
                         What flavor do you prefer?
                     </div>
                     <div class="q-btn-base">
-                        <button class="q-button">
+                        <button class="q-button" onclick="selected_answer('flavor', 'floral')">
                             Floral
                         </button>
-                        <button class="q-button">
+                        <button class="q-button" onclick="selected_answer('flavor', 'herbal')">
                             Herbal
                         </button>
-                        <button class="q-button">
+                        <button class="q-button" onclick="selected_answer('flavor', 'fruity')">
                             Fruity
                         </button>
                     </div>
@@ -200,13 +200,14 @@
                     </div>
 
                     <div class="q-btn-base">
-                        <button class="q-button">
+                        <button class="q-button"
+                        onclick="selected_answer('taste', 'sweet')">
                             Sweet
                         </button>
-                        <button class="q-button">
+                        <button class="q-button" onclick="selected_answer('taste', 'sour')">
                             Sour
                         </button>
-                        <button class="q-button">
+                        <button class="q-button" onclick="selected_answer('taste', 'bitter')">
                             Bitter
                         </button>
                     </div>
@@ -219,13 +220,13 @@
                     </div>
 
                     <div class="q-btn-base">
-                        <button class="q-button">
+                        <button class="q-button" onclick="selected_answer('intensity', 'gentle')">
                             Gentle
                         </button>
-                        <button class="q-button">
+                        <button class="q-button" onclick="selected_answer('intensity', 'medium')">
                             Medium
                         </button>
-                        <button class="q-button">
+                        <button class="q-button" onclick="selected_answer('intensity', 'rich')">
                             Rich
                         </button>
                     </div>
@@ -238,13 +239,13 @@
                     </div>
 
                     <div class="q-btn-base">
-                        <button class="q-button">
+                        <button class="q-button" onclick="selected_answer('caffeine', 'none')">
                             None
                         </button>
-                        <button class="q-button">
+                        <button class="q-button" onclick="selected_answer('caffeine', 'medium')">
                             Medium
                         </button>
-                        <button class="q-button">
+                        <button class="q-button" onclick="selected_answer('caffeine', 'High')">
                             High
                         </button>
                     </div>
@@ -253,7 +254,7 @@
 
             </div>
 
-            <button class="q-get-result">
+            <button class="q-get-result" onclick="get_result()">
                 Get recommendation
             </button>
 
