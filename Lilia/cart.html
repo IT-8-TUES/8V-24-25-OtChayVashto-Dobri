@@ -214,7 +214,7 @@
 
         <p class="total-price">Total: 8.99</p>
 
-        <button id="reset-button" onclick="reset()">Reset Cart</button>
+        <button id="reset-button">Reset</button>
 
         <!--code for footer from Tsveti's folder-->
         <div class="footer-container">
@@ -238,45 +238,7 @@
             </div>
        </div>
        <div class="copyright"><p>©2025 LeafAndBloom.All rights reserved.</p></div>
-       
-       <script>
-  
-  function increase(button) {
-    const quantityElement = button.parentElement.querySelector('.quantity');
-    let count = parseInt(quantityElement.innerText);
-    count++;
-    quantityElement.innerText = count;
-    calculateTotal();
-  }
-
-  function decrease(button) {
-    const quantityElement = button.parentElement.querySelector('.quantity');
-    let count = parseInt(quantityElement.innerText);
-    if (count > 1) {
-      count--;
-      quantityElement.innerText = count;
-      calculateTotal();
-    }
-  }
-  
-  function calculateTotal() {
-  const productElements = document.querySelectorAll('.added-product');
-  const quantities = document.querySelectorAll('.quantity');
-  let total = 0;
-
-  productElements.forEach(product => {
-    const priceText = product.querySelector('.price').innerText;
-    const price = parseFloat(priceText.replace('BGN', '').trim());
-    const quantity = parseInt(product.querySelector('.quantity').innerText);
-    total += price * quantity;
-  });
-
-  document.querySelector('.total-price').innerText = 'Total: BGN ' + total.toFixed(2);
-}
-calculateTotal();
-
-
- src="../cart.js" 
-       </script>
+ 
+      <script src="../cart.js"></script>
     </body>
 </html>
