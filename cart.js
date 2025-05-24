@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         empty.textContent = "Your cart is empty.";
         empty.style.textAlign = "center";
         empty.style.fontSize = "20px";
-        document.querySelector(".heading").after(empty);
         return;
     }
     divProducts.forEach(prod => prod.style.display = "none");
@@ -60,8 +59,49 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-function reset() {
-    localStorage.removeItem("cart");
-    location.reload();
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("reset-button");
+    button.addEventListener("click", function () {
+        localStorage.removeItem("cart");
+        location.reload();
+    })
+})
+
 /*Tsveta*/
+
+
+/*Lily*/
+function increase(button) {
+    const quantityElement = button.parentElement.querySelector('.quantity');
+    let count = parseInt(quantityElement.innerText);
+    count++;
+    quantityElement.innerText = count;
+    calculateTotal();
+  }
+
+  function decrease(button) {
+    const quantityElement = button.parentElement.querySelector('.quantity');
+    let count = parseInt(quantityElement.innerText);
+    if (count > 1) {
+      count--;
+      quantityElement.innerText = count;
+      calculateTotal();
+    }
+  }
+  
+  function calculateTotal() {
+  const productElements = document.querySelectorAll('.added-product');
+  const quantities = document.querySelectorAll('.quantity');
+  let total = 0;
+
+  productElements.forEach(product => {
+    const priceText = product.querySelector('.price').innerText;
+    const price = parseFloat(priceText.replace('BGN', '').trim());
+    const quantity = parseInt(product.querySelector('.quantity').innerText);
+    total += price * quantity;
+  });
+
+  document.querySelector('.total-price').innerText = 'Total: BGN ' + total.toFixed(2);
+}
+calculateTotal();
+/*Lily */

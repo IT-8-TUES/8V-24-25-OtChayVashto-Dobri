@@ -128,18 +128,17 @@ html,body{
 }
 
 .birds{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
-.add:hover{
-    background-color:rgb(88, 67, 67);
-
-}
-
-.party{
+.party-button{
     display: flex;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     margin-left: 8rem;
+    background-color: rgb(255, 244, 244);
+    border: none;
+    border-radius: 3rem;
+    color: rgb(255, 244, 244);
 }
 
 .footer-container{
