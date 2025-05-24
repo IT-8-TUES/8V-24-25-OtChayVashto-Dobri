@@ -240,7 +240,7 @@
        <div class="copyright"><p>©2025 LeafAndBloom.All rights reserved.</p></div>
        
        <script>
-  
+  // Functions for increase and decrease buttons
   function increase(button) {
     const quantityElement = button.parentElement.querySelector('.quantity');
     let count = parseInt(quantityElement.innerText);
@@ -258,7 +258,7 @@
       calculateTotal();
     }
   }
-  
+  //Function for calculating the total price
   function calculateTotal() {
   const productElements = document.querySelectorAll('.added-product');
   const quantities = document.querySelectorAll('.quantity');
@@ -273,6 +273,15 @@
 
   document.querySelector('.total-price').innerText = 'Total: BGN ' + total.toFixed(2);
 }
+//Function for removing products from the cart
+document.querySelectorAll('.remove-button').forEach(button => {
+  button.addEventListener('click', function () {
+    const productElement = button.closest('.added-product');
+    productElement.remove();
+    calculateTotal();
+  });
+});
+
 calculateTotal();
 
 
