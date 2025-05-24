@@ -64,8 +64,8 @@
             </div>
         </div>
 
-        <div class="party">
-            <button class="party-button">Party</button>
+        <div>
+            <button class="party-button" onclick="partyMode()">Party</button>        
         </div>
 
         <div class="footer-container">
@@ -89,6 +89,21 @@
             </div>
        </div>
        <div class="copyright"><p>©2025 LeafAndBloom.All rights reserved.</p></div>
+       <script>
+        function partyMode() {
+            const colors = ["hotpink", "lime", "aqua", "yellow", "orange", "cyan", "red"];
+            let i=0;
+            const bgInterval = setInterval(() => {
+                document.body.style.background = colors[i % colors.length];
+                i++;
+            }, 100);
+            setTimeout(() => {
+                clearInterval(bgInterval);
+                document.body.style.background = "white";
+                partyBox.style.display = "none";
+            }, 10000)
+        }
+       </script>
        <script src="../../cart.js"></script>
 
     </body>
