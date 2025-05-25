@@ -46,7 +46,13 @@ body{
 #cart {
     height: 1em;
     margin-top: 0.1rem;
-}/*lily's header*/
+}
+
+a:link, a:visited{
+    color: black;
+    text-decoration: none;
+}
+/*lily's header*/
 
 .container{
     padding-top: 6rem; 
@@ -194,6 +200,7 @@ body{
 }
 
 .email{
+    border-style: solid;
     cursor: pointer;
     border-radius: 2rem;
     width: 20rem;
