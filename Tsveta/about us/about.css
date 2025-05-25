@@ -135,10 +135,10 @@ html,body{
     display: flex;
     margin-bottom: 1rem;
     margin-left: 8rem;
-    background-color: rgb(251,247,241);
+    background-color: rgb(250, 242, 230);
     border: none;
     border-radius: 3rem;
-    color: rgb(251,247,241);
+    color: rgb(250, 242, 230);
 }
 
 .footer-container{
