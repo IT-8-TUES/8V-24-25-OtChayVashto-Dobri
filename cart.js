@@ -101,7 +101,7 @@ function increase(button) {
   let total = 0;
 
   productElements.forEach(product => {
-    if (product.style.display === 'none') return; // skip hidden products
+    if (product.style.display === 'none') return;
 
     const priceText = product.querySelector('.price').innerText;
     const price = parseFloat(priceText.replace('BGN', '').trim());
@@ -136,7 +136,4 @@ document.querySelectorAll('.remove-button').forEach(button => {
 calculateTotal();
     });
 });
-
-
-
 /*Lily */
