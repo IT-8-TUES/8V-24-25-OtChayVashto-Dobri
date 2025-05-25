@@ -4,7 +4,7 @@ p,h1,em{
 }
 
 html,body{ 
-    background-color: rgb(255, 244, 244);
+    background-color:rgb(250, 242, 230);
     padding: 0;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -23,7 +23,7 @@ html,body{
     top: 0;
     right: 0;
     left: 0;
-    background-color: rgb(198, 180, 176);
+    background-color: rgb(243, 222, 194);
     box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.3);
 
 }
@@ -74,7 +74,7 @@ html,body{
     top: 0;
     background-color: rgb(0, 0, 0, 0.5);
     font-size: 5rem;
-    color: rgb(235, 213, 213);
+    color: rgb(251,247,241);
 }
 
 .main{
@@ -135,14 +135,14 @@ html,body{
     display: flex;
     margin-bottom: 1rem;
     margin-left: 8rem;
-    background-color: rgb(255, 244, 244);
+    background-color: rgb(251,247,241);
     border: none;
     border-radius: 3rem;
-    color: rgb(255, 244, 244);
+    color: rgb(251,247,241);
 }
 
 .footer-container{
-    background-color:  rgb(160, 138, 133);
+    background-color:  rgb(229, 205, 176);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -202,6 +202,7 @@ html,body{
 
 
 .email{
+    border-style: solid;
     cursor: pointer;
     border-radius: 2rem;
     width: 20rem;
@@ -217,16 +218,16 @@ html,body{
     padding-right: 2rem;
     padding-left: 2rem;
     border: none;
-    background-color: rgb(75, 54, 54);
+    background-color: rgb(114, 91, 78);
     color: white;
 }
 
 .spam:hover{
-    background-color: rgb(88, 67, 67);
+    background-color:  rgb(130, 107, 101);
 }
 
 .copyright{
-    background-color: rgb(160, 138, 133);
+    background-color: rgb(229, 205, 176);
     left:0;
     right: 0;
     bottom: 0;

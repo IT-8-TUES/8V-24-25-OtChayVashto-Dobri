@@ -1,15 +1,22 @@
+html, body{
+    background-color: rgb(251,247,241);
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 p, em {
     margin: 0;
     padding: 0;
 }
 
 .footer-container{
-    background-color: rgb(160, 138, 133);
+    background-color:  rgb(229, 205, 176);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    left: 0;
+    left:0;
     right: 0;
     bottom: 0;
     padding-top: 2rem;
@@ -53,7 +60,7 @@ p, em {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
 
 .put-email{
@@ -61,7 +68,10 @@ p, em {
     align-items: center;
 }
 
+
+
 .email{
+    border-style: solid;
     cursor: pointer;
     border-radius: 2rem;
     width: 20rem;
@@ -77,21 +87,20 @@ p, em {
     padding-right: 2rem;
     padding-left: 2rem;
     border: none;
-    background-color: rgb(75, 54, 54);
+    background-color: rgb(114, 91, 78);
     color: white;
 }
 
 .spam:hover{
-    background-color: rgb(88, 67, 67);
+    background-color:  rgb(130, 107, 101);
 }
 
 .copyright{
-    background-color: rgb(160, 138, 133);
-    left: 0;
+    background-color: rgb(229, 205, 176);
+    left:0;
     right: 0;
     bottom: 0;
     display: flex;
     flex-direction: column;
     align-items:end;
-    
 }

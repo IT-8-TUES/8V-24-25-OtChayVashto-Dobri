@@ -2,7 +2,7 @@
 function addToCart(button) {
     const productEl = button.closest('.product-info');
     const name = productEl.querySelector('.text p').textContent.trim();
-    const quant = parseInt(productEl.querySelector(".quantity-box").value) || 1;
+const quant = parseInt(productEl.querySelector(".quantity-box").value) || 1;
     const itemPrice = 8.99;
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     const existItem = cart.find(p => p.name === name);
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
-      calculateTotal();
+    calculateTotal();
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.total-price').innerText = 'Total: BGN 0.00';
 
         setTimeout(() => {
-            location.reload();
+          location.reload();
         }, 100);
     })
 })
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /*Lily*/
 function increase(button) {
-    const quantityElement = button.parentElement.querySelector('.quantity');
+    const quantityElement = button.parentElement.querySelector('.quantity'); 
     let count = parseInt(quantityElement.innerText);
     count++;
     quantityElement.innerText = count;
@@ -94,27 +94,27 @@ function increase(button) {
       calculateTotal();
     }
   }
-  
-  
+
+
   function calculateTotal() {
-    const productElements = document.querySelectorAll('.added-product');
-    let total = 0;
+   const productElements = document.querySelectorAll('.added-product');
+  let total = 0;
 
-    productElements.forEach(product => {
-        if (product.style.display === 'none') return; // skip hidden products
+  productElements.forEach(product => {
+    if (product.style.display === 'none') return; // skip hidden products
 
-        const priceText = product.querySelector('.price').innerText;
-        const price = parseFloat(priceText.replace('BGN', '').trim());
+    const priceText = product.querySelector('.price').innerText;
+    const price = parseFloat(priceText.replace('BGN', '').trim());
 
         const quantityText = product.querySelector('.quantity').innerText;
         const quantity = parseInt(quantityText);
 
         if (!isNaN(price) && !isNaN(quantity)) {
             total += price * quantity;
-        }
-    });
+        } 
+     });
 
-    document.querySelector('.total-price').innerText = 'Total: BGN ' + total.toFixed(2);
+  document.querySelector('.total-price').innerText = 'Total: BGN ' + total.toFixed(2);
 }
 
 
@@ -133,7 +133,7 @@ document.querySelectorAll('.remove-button').forEach(button => {
 
         
         cartQuant();
-        calculateTotal();
+calculateTotal();
     });
 });
 
