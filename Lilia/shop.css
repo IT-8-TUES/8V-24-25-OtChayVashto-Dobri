@@ -5,7 +5,7 @@ body {
     margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;
-    background-color: rgb(255, 244, 244);
+    background-color: #fef9f6; 
 }
 .header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -73,7 +73,7 @@ body {
     border: 1px solid black;
     border-radius: 20px;
     width: 12.5em;
-    background-color: rgb(237, 222, 222);
+    background-color: rgb(224, 202, 197);
     padding: 1rem;
     padding-top: 1.5rem;
     position: relative;
