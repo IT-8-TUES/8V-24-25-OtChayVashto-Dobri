@@ -89,7 +89,7 @@ a:link, a:visited{
     align-items: center;
     flex-direction: column;
     width: 90%;
-    padding: 0 7.5%;
+    margin: 0 5%;
 }
 
 .text1{
@@ -110,6 +110,7 @@ a:link, a:visited{
     text-align: justify;
     font-size: 1.7rem;
     margin-top: 3.5rem;
+    margin-bottom: 2rem;
 }
 
 .middle{
@@ -118,20 +119,30 @@ a:link, a:visited{
 
 .pic{
     width: 90vw;
-    height: 60vh;
+    height: 40vh;
     object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .text3{
     text-align: justify;
     font-size: 1.7rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .text4{
     text-align: justify;
     font-size: 1.7rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 /*.audios{
