@@ -24,15 +24,16 @@ body{
     align-items: stretch;
     position: relative;
 
-    height: 95vh;
+    height: 94vh;
     width: 100%;
 
     margin-top: 5vh;
 }
 
 .w-image{
-    height: 95vh;
+    height: 94vh;
     width: 100%;
+    overflow: hidden;
     object-fit: cover;
 }
 
@@ -54,7 +55,7 @@ body{
     right: 0vw;
     left: 0vw;
 
-    height: 95vh;
+    height: 94vh;
 
     background-color: rgba(61, 53, 41, 0.5);
 
