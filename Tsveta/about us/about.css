@@ -66,6 +66,7 @@ a:link, a:visited{
     width: 100%;
     height: 90vh;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .tint{
@@ -107,11 +108,11 @@ a:link, a:visited{
 .text2{
     text-align: justify;
     font-size: 1.7rem;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     width: 85%;
 }
 
-.audios{
+/*.audios{
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -134,7 +135,7 @@ a:link, a:visited{
 
 .birds{
     margin-bottom: 1rem;
-}
+}*/
 
 .party-button{
     display: flex;
