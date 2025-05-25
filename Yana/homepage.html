@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="homepage.css">
         <link rel="stylesheet" href="header_css.css">
         <link rel="stylesheet" href="../Tsveta/footer/footer.css">
+
+        
+
     </head>
 
     <body>
@@ -22,7 +25,9 @@
             <div class="right-section">
              <a href="../Lilia/shop.html" class="element">Shop</a>
              <a href="../Tsveta/about us/about.html" class="element">About us</a>
-             <a href="../Tsveta/cart.html"><img src="../Lilia/cart.png" id="cart"></a>
+             <a href="../Lilia/cart.html"><img src="../Lilia/cart.png" id="cart">
+                <span id="cart-count">0</span><!--for the cartQuant function-->
+            </a>
             </div>     
          </div>
 
@@ -181,13 +186,13 @@
                         What flavor do you prefer?
                     </div>
                     <div class="q-btn-base">
-                        <button class="q-button" onclick="selected_answer('flavor', 'floral')">
+                        <button class="q-button" onclick="selected_answer('flavor', 'floral', this)">
                             Floral
                         </button>
-                        <button class="q-button" onclick="selected_answer('flavor', 'herbal')">
+                        <button class="q-button" onclick="selected_answer('flavor', 'herbal', this)">
                             Herbal
                         </button>
-                        <button class="q-button" onclick="selected_answer('flavor', 'fruity')">
+                        <button class="q-button" onclick="selected_answer('flavor', 'fruity', this)">
                             Fruity
                         </button>
                     </div>
@@ -201,13 +206,13 @@
 
                     <div class="q-btn-base">
                         <button class="q-button"
-                        onclick="selected_answer('taste', 'sweet')">
+                        onclick="selected_answer('taste', 'sweet', this)">
                             Sweet
                         </button>
-                        <button class="q-button" onclick="selected_answer('taste', 'sour')">
+                        <button class="q-button" onclick="selected_answer('taste', 'sour', this)">
                             Sour
                         </button>
-                        <button class="q-button" onclick="selected_answer('taste', 'bitter')">
+                        <button class="q-button" onclick="selected_answer('taste', 'bitter', this)">
                             Bitter
                         </button>
                     </div>
@@ -220,13 +225,13 @@
                     </div>
 
                     <div class="q-btn-base">
-                        <button class="q-button" onclick="selected_answer('intensity', 'gentle')">
+                        <button class="q-button" onclick="selected_answer('intensity', 'gentle', this)">
                             Gentle
                         </button>
-                        <button class="q-button" onclick="selected_answer('intensity', 'medium')">
+                        <button class="q-button" onclick="selected_answer('intensity', 'medium', this)">
                             Medium
                         </button>
-                        <button class="q-button" onclick="selected_answer('intensity', 'rich')">
+                        <button class="q-button" onclick="selected_answer('intensity', 'rich', this)">
                             Rich
                         </button>
                     </div>
@@ -239,13 +244,13 @@
                     </div>
 
                     <div class="q-btn-base">
-                        <button class="q-button" onclick="selected_answer('caffeine', 'none')">
+                        <button class="q-button" onclick="selected_answer('caffeine', 'none', this)">
                             None
                         </button>
-                        <button class="q-button" onclick="selected_answer('caffeine', 'medium')">
+                        <button class="q-button" onclick="selected_answer('caffeine', 'medium', this)">
                             Medium
                         </button>
-                        <button class="q-button" onclick="selected_answer('caffeine', 'High')">
+                        <button class="q-button" onclick="selected_answer('caffeine', 'High', this)">
                             High
                         </button>
                     </div>
@@ -309,6 +314,7 @@
 
 
                 <script src="quiz.js"></script>
+                <script src="../cart.js"></script>
 
     </body>
 

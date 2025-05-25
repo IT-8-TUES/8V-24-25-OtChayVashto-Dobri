@@ -212,7 +212,7 @@ body{
 
     font-size: 1.5rem;
 
-    margin-left: 8%;
+    margin-left: 5%;
 }
 
 .q-btn-base{
@@ -223,7 +223,7 @@ body{
 
     /* border: 1px solid black; */
 
-    margin-right: 4%;
+    /* margin-right: 2%; */
 }
 
 .q-button{
@@ -244,19 +244,18 @@ body{
     background-color: rgb(75, 54, 54);
     transition: all 0.2s;
 }
-.q-button:active{
-    background-color: rgb(238, 0, 0);
-    transition: all 0.2s;
+.q-button.selected{
+    background-color: rgb(75, 54, 54);
 }
 
 .q-get-result{
     margin: 5vh 4vw 0 0;
 
-    height: 7vh;
-    width: 12vw;
+    
+    
     border-radius: 4vw;
     border: none;
-    padding: 1vw;
+    padding: 2vh 2vw;
 
     background-color: rgb(145, 125, 125);
     color: white;

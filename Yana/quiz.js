@@ -5,10 +5,16 @@ const answers = {
     caffeine : null,
 };
 
-function selected_answer(question, answer){
+function selected_answer(question, answer, selected_button){
     answers[question] = answer;
-
     console.log(`currently selected in ${question} is ${answer}`);
+
+    const btn_container = selected_button.parentElement;
+    const buttons = btn_container.querySelectorAll('.q-button');
+    buttons.forEach(btn => btn.classList.remove('selected'));
+
+    selected_button.classList.add('selected');
+
 }
 
 
@@ -55,7 +61,7 @@ function get_result(){
             tea.score += 1;
         }
         if(tea.caffeine === answers.caffeine){
-            tea.score += 1;
+            tea.score += 2;
         }
 
     }
