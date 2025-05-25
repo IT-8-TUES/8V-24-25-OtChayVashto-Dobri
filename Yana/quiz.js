@@ -20,6 +20,15 @@ function selected_answer(question, answer, selected_button){
 
 function get_result(){
 
+    const none_answered = Object.values(answers).every(answer => answer === null);
+
+    if(none_answered){
+        alert("Please answer atleast one question.")
+        return 1;
+    }
+
+
+
     const tea_stats = {
 
         "daisy-bloom" : {flavor: "floral", taste: "bitter", intensity: "gentle", caffeine: "none", score: 0, url: "../Tsveta/products/product.html"},

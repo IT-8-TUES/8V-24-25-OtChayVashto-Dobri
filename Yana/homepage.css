@@ -14,7 +14,7 @@ body{
 
     font-family: Georgia, 'Times New Roman', Times, serif;
 
-    background-color: rgb(255, 244, 244);
+    background-color:rgb(250, 242, 230);
 
 }
 
@@ -24,14 +24,14 @@ body{
     align-items: stretch;
     position: relative;
 
-    height: 93vh;
+    height: 95vh;
     width: 100%;
 
     margin-top: 5vh;
 }
 
 .w-image{
-    height: 93vh;
+    height: 95vh;
     width: 100%;
     object-fit: cover;
 }
@@ -43,7 +43,7 @@ body{
    
     font-size: 5rem;
     font-weight: 500;
-    color: rgb(255, 255, 255);
+    color: rgb(251,247,241);
 }
 
 .w-tint{
@@ -54,9 +54,9 @@ body{
     right: 0vw;
     left: 0vw;
 
-    height: 93vh;
+    height: 95vh;
 
-    background-color: rgba(83, 83, 83, 0.5);
+    background-color: rgba(61, 53, 41, 0.5);
 
     /* box-shadow: 0 10px 20px rgba( 0, 0, 0, 0.4); */
 }
@@ -68,7 +68,9 @@ body{
     flex-direction: column;
 
     width: 100%;
-    height: 45vw;
+    /* height: 45vw; */
+    /* height: 95vh; */
+    padding: 10vh 0;
     min-height: 78vh;
     padding-top: 5vh;
 
@@ -133,7 +135,7 @@ body{
     border-radius: 10vw;
     border: none;
 
-    background-color: black;
+    background-color: rgb(114, 91, 78);
     color: white;
 
     cursor: pointer;
@@ -166,8 +168,9 @@ body{
     flex-direction: column;
 
     width: 100%;
-    height: 47vw;
-    min-height: 78vh;
+    /* height: 50vw; */
+    padding: 10vh 0;
+    /* min-height: 78vh; */
     padding-top: 5vh;
 }
 
@@ -234,36 +237,34 @@ body{
     border-radius: 4vw;
     border: none;
 
-    background-color: rgb(145, 125, 125);
+    background-color: rgb(211, 185, 168);
     color: white;
     font-size: 1rem;
 
     cursor: pointer;
 }
 .q-button:hover{
-    background-color: rgb(75, 54, 54);
+    background-color: rgb(114, 91, 78);
     transition: all 0.2s;
 }
 .q-button.selected{
-    background-color: rgb(75, 54, 54);
+    background-color: rgb(114, 91, 78);
 }
 
 .q-get-result{
     margin: 5vh 4vw 0 0;
 
-    
-    
     border-radius: 4vw;
     border: none;
     padding: 2vh 2vw;
 
-    background-color: rgb(145, 125, 125);
+    background-color: rgb(211, 185, 168);
     color: white;
     font-size: 1rem;
 
     cursor: pointer;
 }
 .q-get-result:hover{
-    background-color: rgb(75, 54, 54);
+    background-color: rgb(114, 91, 78);
     transition: all 0.2s;
 }
