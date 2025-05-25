@@ -4,6 +4,9 @@ p, body  {
 body {
     background-color: #fef9f6;    
 }
+.main {
+    min-height: 40vh;
+}
 .header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     height: 3em;
